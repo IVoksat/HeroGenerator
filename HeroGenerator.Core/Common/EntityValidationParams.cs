@@ -16,6 +16,7 @@
         {
             public const int EquipmentNameMaxLength = 50;
             public const int EquipmentNameMinLength = 3;
+
             public const int EquipmentTypeMaxLength = 20;
             public const int EquipmentTypeMinLength = 3;
         }

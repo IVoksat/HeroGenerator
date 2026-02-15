@@ -1,4 +1,7 @@
+using HeroGenerator.Core.Common;
 using HeroGenerator.Core.Data;
+using HeroGenerator.Services.Contracts;
+using HeroGenerator.Services.Core;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -13,6 +16,9 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<HeroGeneratorDbContext>();
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddScoped<IRepository, Repository>();
+builder.Services.AddScoped<IHeroService, HeroService>();
 
 var app = builder.Build();
 

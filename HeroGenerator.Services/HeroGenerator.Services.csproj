@@ -10,11 +10,4 @@
     <ProjectReference Include="..\HeroGenerator.Core\HeroGenerator.Core.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Contracts\" />
-    <Folder Include="Models\" />
-    <Folder Include="Interfaces\" />
-    <Folder Include="Services\" />
-  </ItemGroup>
-
 </Project>
