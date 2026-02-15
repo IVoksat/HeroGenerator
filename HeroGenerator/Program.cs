@@ -1,4 +1,4 @@
-using HeroGenerator.Data;
+using HeroGenerator.Core.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
